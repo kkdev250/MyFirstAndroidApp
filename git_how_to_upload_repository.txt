@@ -1,0 +1,12 @@
+one-time setting git:
+git config --global core.autocrlf false
+(that means git will NOT be converting LF/CRLF) during commit or checkout
+
+0. create GitHub repo (without checking add readme, .gitignore, license)
+1. git init
+2. git add .
+3. git commit -m "start"
+4. git branch -m main
+(rename default branch 'master' into 'main')
+4. git remote add origin https://github.com/kkdev250/{repository_name}.git
+5. git push -u origin main
